@@ -21,7 +21,7 @@ app.get('/column', (req, res) => {
         if (err) {
             res.status(500).send(err);
         } else {
-            const values = rows.map(row => row[columnName]);
+            const values = rows.map(row => row[columnName].replace("AM", "ALYNO MIERZWO"));
             res.json(values);
         }
     });
