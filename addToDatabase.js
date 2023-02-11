@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
 const NrDoKlasy = {
     1: "1a", 2: "1b", 3: "1c", 4: "2a", 5: "2b", 6: "3a", 7: "3b", 8: "4a", 9: "4b", 10: "1at", 11: "1bt", 12: "1ct", 13: "1dt", 14: "1et", 15: "1ft", 16: "2at", 17: "2bt", 18: "2ct", 19: "2dt", 20: "3at", 21: "3bt", 22: "3ct", 23: "3dt", 24: "3et", 25: "4at", 26: "4bt", 27: "4ct", 28: "4dt", 29: "4atg", 30: "4btg", 31: "4ctg", 32: "4dtg", 33: "1ab", 34: "2ab", 35: "3ab"
 }
-
+// node addtodatabase.js 21 3bt
 const ktoryOddzialLicz = process.argv[2];
 console.log(`zajmuje sie oddzialem ${NrDoKlasy[ktoryOddzialLicz]}`);
 connection.query('truncate table ' + NrDoKlasy[ktoryOddzialLicz]);

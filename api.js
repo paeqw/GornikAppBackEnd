@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
 });
 
 const app = express();
-
+//http://192.168.100.27:2137/column?table=3bt&name=Poniedziałek
 app.get('/column', (req, res) => {
     const tableName = req.query.table;
     const columnName = req.query.name;
